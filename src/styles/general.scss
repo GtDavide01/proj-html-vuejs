@@ -1,6 +1,15 @@
 // RESET
+@import url('https://fonts.cdnfonts.com/css/codec-pro');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    font-family: 'Codec Pro', sans-serif;
+}
+// COMMON
+.container{
+    width: 60%;
+    margin: 0 auto ;
 }
