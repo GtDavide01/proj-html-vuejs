@@ -39,7 +39,7 @@ export default {
           </p>
           <div class="buttoncontent">
             <AppButtonVue text="GET IN TOUCH" />
-            <AppButtonVue text="READ MORE" />
+            <AppButtonVue class="bgnone" text="READ MORE" />
           </div>
         </div>
       </div>
@@ -108,6 +108,9 @@ header {
     padding-top: 30px;
     line-height: 20px;
   }
+}
+.bgnone {
+  background: none;
 }
 .buttoncontent {
   margin-top: 20px;

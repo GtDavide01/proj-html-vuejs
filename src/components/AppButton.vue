@@ -4,6 +4,7 @@ export default {
   name: "AppButton",
   props: {
     text: String,
+    over: String,
   },
 };
 </script>
@@ -16,7 +17,7 @@ export default {
 @use "../styles/partials/variabili" as *;
 button {
   color: white;
-  background: none;
+  background-color: $buttoncolor;
   border: 1px solid $buttoncolor;
   border-radius: 5px;
   padding: 14px 20px;
