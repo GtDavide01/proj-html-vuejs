@@ -32,7 +32,15 @@ export default {
           </div>
         </header>
         <div class="centercontent">
-          <h1>CIAO CIAO</h1>
+          <h1>Financial Risk</h1>
+          <p>
+            The right outcomes depend on continuos rigor in governance, models,
+            and processes across the finance funcition.
+          </p>
+          <div class="buttoncontent">
+            <AppButtonVue text="GET IN TOUCH" />
+            <AppButtonVue text="READ MORE" />
+          </div>
         </div>
       </div>
     </div>
@@ -70,14 +78,14 @@ header {
     span {
       font-size: 1.2rem;
       font-weight: 600;
-      margin: 0 3px;
+      margin: 0 2px;
       color: $textheadercolor;
     }
     .special {
       background-color: rgba(5, 130, 131, 0.3);
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
-      padding-right: 5px;
+      padding-right: 1px;
       padding: 10px;
       padding-left: 30px;
       color: $fontocean;
@@ -85,10 +93,26 @@ header {
   }
 }
 .centercontent {
+  width: 35%;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    color: $textheadercolor;
+    padding-top: 30px;
+    line-height: 20px;
+  }
+}
+.buttoncontent {
+  margin-top: 20px;
+  button {
+    margin: 0 10px;
+  }
 }
 </style>
