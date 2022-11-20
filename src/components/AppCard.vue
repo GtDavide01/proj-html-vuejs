@@ -2,6 +2,11 @@
 <script>
 export default {
   name: "AppCard",
+  props: {
+    icon: String,
+    title: String,
+    description: String,
+  },
 };
 </script>
 <!-- HTML -->
@@ -9,55 +14,13 @@ export default {
   <div class="card">
     <div class="containercard">
       <p>
-        <i><i class="fa-solid fa-network-wired"></i></i>
+        <i><i :class="`${icon}`"></i></i>
       </p>
-      <h2>Audit & Assurance</h2>
-      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="containercard">
-      <p>
-        <i><i class="fa-solid fa-network-wired"></i></i>
-      </p>
-      <h2>Audit & Assurance</h2>
-      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="containercard">
-      <p>
-        <i><i class="fa-solid fa-network-wired"></i></i>
-      </p>
-      <h2>Audit & Assurance</h2>
-      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="containercard">
-      <p>
-        <i><i class="fa-solid fa-network-wired"></i></i>
-      </p>
-      <h2>Audit & Assurance</h2>
-      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="containercard">
-      <p>
-        <i><i class="fa-solid fa-network-wired"></i></i>
-      </p>
-      <h2>Audit & Assurance</h2>
-      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-    </div>
-  </div>
-  <div class="card">
-    <div class="containercard">
-      <p>
-        <i><i class="fa-solid fa-network-wired"></i></i>
-      </p>
-      <h2>Audit & Assurance</h2>
-      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      <h2>{{ title }}</h2>
+      <span>{{ description }}</span>
+      <div class="arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
     </div>
   </div>
 </template>
@@ -83,7 +46,25 @@ export default {
     line-height: 20px;
   }
   .containercard {
-    width: 80%;
+    width: 90%;
+    position: relative;
+  }
+  .arrow {
+    position: absolute;
+    font-size: 1.5rem;
+    color: $buttoncolor;
+    top: 5px;
+    right: -20px;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    &:hover {
+      background-color: $buttoncolor;
+      color: white;
+      cursor: pointer;
+    }
   }
 }
 </style>

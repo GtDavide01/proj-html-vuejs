@@ -2,11 +2,17 @@
 <script>
 import AppCardVue from "./AppCard.vue";
 import AppButtonVue from "./AppButton.vue";
+import { store } from "../store";
 export default {
   name: "AppServices",
   components: {
     AppButtonVue,
     AppCardVue,
+  },
+  data() {
+    return {
+      store,
+    };
   },
 };
 </script>
@@ -29,7 +35,13 @@ export default {
         </div>
       </div>
       <div class="containercard">
-        <AppCardVue />
+        <AppCardVue
+          v-for="(card, index) in store.listService"
+          :key="index"
+          :icon="card.icon"
+          :title="card.title"
+          :description="card.description"
+        />
       </div>
     </div>
   </section>
