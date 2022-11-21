@@ -1,5 +1,9 @@
 <!-- SCRIPT -->
-<script></script>
+<script>
+export default {
+  name: "AppFooter",
+};
+</script>
 <!-- HTML -->
 <template></template>
 <!-- CSS -->

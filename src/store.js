@@ -54,4 +54,28 @@ export const store = reactive({
       role: "CEO & PRESIDENT",
     },
   ],
+  listAbout: [
+    "The Company",
+    "Institutional",
+    "Social & Events",
+    "Innovation",
+    "Enviroment",
+    "Technology",
+  ],
+  listServices: [
+    "Audit & Assurance",
+    "Financial Advisory",
+    "Analytics M&A",
+    "Middle Marketing",
+    "Legal Consulting",
+    "Regulatory Risk",
+  ],
+  listSupport: [
+    "Responsability",
+    "Terms of Use",
+    "About Cookies",
+    "Privacy Policy",
+    "Accessibility",
+    "Infomation",
+  ],
 });

@@ -118,12 +118,17 @@ export default {
     }
     button {
       margin-top: 20px;
+      margin-bottom: 100px;
     }
   }
   .example {
     button {
       background: white;
       color: $buttoncolor;
+      &:hover {
+        background-color: $buttoncolor;
+        color: white;
+      }
     }
     width: 30%;
     h2 {
