@@ -21,7 +21,7 @@ export default {
   <section class="service">
     <div class="container">
       <h4>OUR BUISENESS AREAS</h4>
-      <h2>Excellence in<span>Services</span></h2>
+      <h2>Excellence in <span>Services</span></h2>
       <div class="info">
         <div class="left">
           <p>
@@ -63,6 +63,7 @@ h2 {
   color: white;
   span {
     background-color: rgba(5, 130, 131, 0.2);
+    border-radius: 4px;
     padding: 10px;
   }
 }
@@ -90,5 +91,6 @@ button {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 120px;
 }
 </style>

@@ -7,35 +7,44 @@ export default {
 <!-- HTML -->
 <template>
   <div class="resultn">
-    <section class="container">
-      <h4>WHAT ARE WE DOING</h4>
-      <h2><span>Results</span> in Numbers</h2>
-      <ul>
-        <li>
-          <p>128</p>
-          <p class="subtitle">Certifications</p>
-        </li>
-        <li>
-          <p>230</p>
-          <p class="subtitle">Employees</p>
-        </li>
-        <li>
-          <p>517</p>
-          <p class="subtitle">Customers</p>
-        </li>
-        <li>
-          <p>94</p>
-          <p class="subtitle">Countries-Served</p>
-        </li>
-      </ul>
-    </section>
+    <div class="opaco">
+      <section class="container">
+        <h4>WHAT ARE WE DOING</h4>
+        <h2><span>Results</span> in Numbers</h2>
+        <ul>
+          <li>
+            <p>128</p>
+            <p class="subtitle">Certifications</p>
+          </li>
+          <li>
+            <p>230</p>
+            <p class="subtitle">Employees</p>
+          </li>
+          <li>
+            <p>517</p>
+            <p class="subtitle">Customers</p>
+          </li>
+          <li>
+            <p>94</p>
+            <p class="subtitle">Countries-Served</p>
+          </li>
+        </ul>
+      </section>
+    </div>
   </div>
 </template>
 <!-- CSS -->
 <style lang="scss" scoped>
 @use "../styles/partials/variabili" as *;
 .resultn {
-  background-image: url(../assets/img/bg-7.jpg);
+  background-image: url(../assets/img/bg-8.jpg);
+  background-position: center;
+  background-size: cover;
+  .opaco {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.4);
+  }
 }
 .container {
   text-align: center;
@@ -51,6 +60,7 @@ export default {
     span {
       background-color: rgba(5, 130, 131, 0.2);
       padding: 10px;
+      border-radius: 4px;
     }
   }
   ul {

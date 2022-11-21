@@ -32,4 +32,26 @@ export const store = reactive({
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
     },
   ],
+  listTeam: [
+    {
+      img: "team-1.jpg",
+      name: "David Cooper",
+      role: "CTO & CO-FOUNDER",
+    },
+    {
+      img: "team-2.jpg",
+      name: "Emma Lopez",
+      role: "CHIEF MARKETING",
+    },
+    {
+      img: "team-3.jpg",
+      name: "Oliver Jones",
+      role: "CHIEF PROCURAMENT",
+    },
+    {
+      img: "team-4.jpg",
+      name: "T.Jhonson",
+      role: "CEO & PRESIDENT",
+    },
+  ],
 });

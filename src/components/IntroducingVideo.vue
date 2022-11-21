@@ -48,7 +48,6 @@ export default {
     }
   }
   p {
-    font-size: 0.9rem;
     margin: 30px 40px;
     width: 65%;
     margin: 0 auto;

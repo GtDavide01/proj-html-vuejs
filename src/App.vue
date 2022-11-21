@@ -6,6 +6,7 @@ import AppJumbotronVue from "./components/AppJumbotron.vue";
 import IntroducingVideoVue from "./components/IntroducingVideo.vue";
 import ResultNumberVue from "./components/ResultNumber.vue";
 import AppServicesVue from "./components/AppServices.vue";
+import AppTeamVue from "./components/AppTeam.vue";
 export default {
   components: {
     AppHeaderVue,
@@ -13,6 +14,7 @@ export default {
     IntroducingVideoVue,
     ResultNumberVue,
     AppServicesVue,
+    AppTeamVue,
   },
 };
 </script>
@@ -29,6 +31,8 @@ export default {
   <ResultNumberVue />
   <!-- section services -->
   <AppServicesVue />
+  <!-- section team -->
+  <AppTeamVue />
 </template>
 
 <!-- CSS -->
