@@ -42,21 +42,20 @@ export default {
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe a
           tempore error distinctio quos quaerat, hic at magnam quia vel
-          temporibus earum consequatur ipsa laborum voluptatum quod nihil
-          reiciendis eos.
+          temporibus earumos.
         </p>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-          delectus exercitationem magnam voluptate explicabo incidunt rerum
-          facilis velit placeat excepturi natus eius dolor facere accusamus,
-          nisi nemo vitae itaque. Optio!
+          delectus exercitationem magnam voluptate explicabo.
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
           mollitia numquam reiciendis magnam atque, minima nostrum architecto?
-          Unde tenetur itaque, perferendis voluptatem, in obcaecati inventore
-          voluptatibus sit blanditiis facere expedita?
         </p>
+        <p class="founder">T. Johnson</p>
+        <div class="quotation">
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
       </div>
     </div>
   </section>
@@ -91,13 +90,36 @@ h2 {
   }
 }
 .textpresident {
+  position: relative;
+  text-align: left;
+  border-radius: 5px;
   width: 30%;
   margin-top: 130px;
+  margin-bottom: 100px;
   background-color: $fontocean;
   padding: 30px;
   h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
     color: white;
     font-size: 1.5rem;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 20px;
+    padding: 10px 0;
+  }
+  .founder {
+    font-weight: 800;
+    color: white;
+    padding: 10px 0;
+  }
+  .quotation {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    font-size: 1.5rem;
+    color: rgba(5, 130, 131, 0.9);
   }
 }
 .containercard {
