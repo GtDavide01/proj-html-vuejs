@@ -2,8 +2,14 @@
 <script>
 // impoirt
 import AppButtonVue from "./AppButton.vue";
+import { store } from "../store";
 export default {
   name: "AppJumbotron ",
+  data() {
+    return {
+      store,
+    };
+  },
   components: {
     AppButtonVue,
   },
@@ -21,14 +27,10 @@ export default {
           </div>
           <div class="right">
             <ul>
-              <li>HOME</li>
-              <li>ABOUT</li>
-              <li>SERVICES</li>
-              <li>TEAM</li>
-              <li>BLOG</li>
+              <li v-for="(li, index) in store.listHeader">{{ li }}</li>
               <li><i class="fa-regular fa-user"></i></li>
-              <li><AppButtonVue text="GET IN TOUCH" /></li>
             </ul>
+            <AppButtonVue text="GET IN TOUCH" />
           </div>
         </header>
         <div class="centercontent">
@@ -111,6 +113,9 @@ header {
 }
 .bgnone {
   background: none;
+}
+.right {
+  display: flex;
 }
 .buttoncontent {
   margin-top: 20px;

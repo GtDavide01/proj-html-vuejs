@@ -54,6 +54,7 @@ export const store = reactive({
       role: "CEO & PRESIDENT",
     },
   ],
+  listHeader: ["HOME", "ABOUT", "SERVICES", "TEAM", "BLOG"],
   listAbout: [
     "The Company",
     "Institutional",
