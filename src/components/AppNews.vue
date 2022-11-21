@@ -99,6 +99,7 @@ export default {
   .card {
     .image {
       position: relative;
+
       .text {
         position: absolute;
         text-align: center;

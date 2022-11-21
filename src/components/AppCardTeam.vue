@@ -7,13 +7,18 @@ export default {
     name: String,
     role: String,
   },
+  methods: {
+    getPathImg(url) {
+      return new URL(url, import.meta.url).href;
+    },
+  },
 };
 </script>
 <!-- HTML -->
 <template>
   <div class="card">
     <div class="image">
-      <img src="../assets/img/${img}" alt="" />
+      <img :src="getPathImg(`../assets/img/${img}`)" alt="" />
       <div class="info">
         <h2>{{ name }}</h2>
         <p>{{ role }}</p>
@@ -37,7 +42,8 @@ export default {
   .image {
     display: flex;
     img {
-      width: 30%;
+      width: 35%;
+      height: 140px;
       border-radius: 5px;
     }
     .info {

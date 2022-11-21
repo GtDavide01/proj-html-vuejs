@@ -50,6 +50,9 @@ export default {
     position: relative;
   }
   .arrow {
+    .fa-solid {
+      line-height: 0px;
+    }
     position: absolute;
     font-size: 1.5rem;
     color: $buttoncolor;

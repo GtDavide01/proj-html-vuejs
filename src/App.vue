@@ -8,6 +8,7 @@ import ResultNumberVue from "./components/ResultNumber.vue";
 import AppServicesVue from "./components/AppServices.vue";
 import AppTeamVue from "./components/AppTeam.vue";
 import AppNewsVue from "./components/AppNews.vue";
+import AppLetterVue from "./components/AppLetter.vue";
 export default {
   components: {
     AppHeaderVue,
@@ -17,6 +18,7 @@ export default {
     AppServicesVue,
     AppTeamVue,
     AppNewsVue,
+    AppLetterVue,
   },
 };
 </script>
@@ -37,6 +39,8 @@ export default {
   <AppTeamVue />
   <!-- section news -->
   <AppNewsVue />
+  <!-- section newsletter -->
+  <AppLetterVue />
 </template>
 
 <!-- CSS -->
