@@ -43,7 +43,6 @@ export default {
   .opaco {
     width: 100%;
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.4);
   }
 }
 .container {
@@ -71,11 +70,11 @@ export default {
     li {
       p {
         color: $fontocean;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 900;
       }
       .subtitle {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 20px;
         color: white;
         margin-bottom: 100px;

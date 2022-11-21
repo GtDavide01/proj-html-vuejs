@@ -27,6 +27,7 @@ export default {
         <div class="card">
           <div class="image">
             <img src="../assets/img/news-1.jpg" alt="" />
+            <div class="overlay"></div>
             <div class="text">
               <p>Increasing creativity is possible for everyone</p>
             </div>
@@ -35,6 +36,7 @@ export default {
         <div class="card">
           <div class="image">
             <img src="../assets/img/news-2.jpg" alt="" />
+            <div class="overlay"></div>
             <div class="text">
               <p>Because market research is part of the business plan</p>
             </div>
@@ -43,6 +45,7 @@ export default {
         <div class="card">
           <div class="image">
             <img src="../assets/img/news-3.jpg" alt="" />
+            <div class="overlay"></div>
             <div class="text"><p>Working from home is now a trend</p></div>
           </div>
         </div>
@@ -95,10 +98,21 @@ export default {
   img {
     width: 100%;
     border-radius: 10px;
+    display: block;
   }
   .card {
+    border-radius: 10px;
     .image {
       position: relative;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+      }
 
       .text {
         position: absolute;

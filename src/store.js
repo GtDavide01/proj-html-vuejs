@@ -1,5 +1,6 @@
 import { reactive } from "vue";
 export const store = reactive({
+  // lista card dei servici
   listService: [
     {
       icon: "fa-solid fa-network-wired",
@@ -32,6 +33,7 @@ export const store = reactive({
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
     },
   ],
+  // lista dei membri del team
   listTeam: [
     {
       img: "team-1.jpg",
@@ -54,7 +56,9 @@ export const store = reactive({
       role: "CEO & PRESIDENT",
     },
   ],
+  // lista li dell'header
   listHeader: ["HOME", "ABOUT", "SERVICES", "TEAM", "BLOG"],
+  // lista footer
   listAbout: [
     "The Company",
     "Institutional",

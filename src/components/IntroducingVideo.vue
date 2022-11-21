@@ -58,7 +58,8 @@ export default {
   .imagevideo {
     position: relative;
     background-image: url(../assets/img/video-1.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     height: 370px;
     width: 80%;
     margin: 0 auto;
