@@ -9,6 +9,7 @@ import AppServicesVue from "./components/AppServices.vue";
 import AppTeamVue from "./components/AppTeam.vue";
 import AppNewsVue from "./components/AppNews.vue";
 import AppLetterVue from "./components/AppLetter.vue";
+import AppSendVue from "./components/AppSend.vue";
 export default {
   components: {
     AppHeaderVue,
@@ -19,6 +20,7 @@ export default {
     AppTeamVue,
     AppNewsVue,
     AppLetterVue,
+    AppSendVue,
   },
 };
 </script>
@@ -41,6 +43,8 @@ export default {
   <AppNewsVue />
   <!-- section newsletter -->
   <AppLetterVue />
+  <!-- section send  -->
+  <AppSendVue />
 </template>
 
 <!-- CSS -->

@@ -76,6 +76,7 @@ export default {
       outline: none;
       background-color: #1d1d23;
       color: white;
+      font-family: "Codec Pro", sans-serif;
     }
     button {
       width: 30%;
