@@ -24,6 +24,7 @@ export default {
     AppLetterVue,
     AppSendVue,
     AppAboutVue,
+    AppFooterVue,
   },
 };
 </script>
@@ -50,6 +51,8 @@ export default {
   <AppSendVue />
   <!-- section about -->
   <AppAboutVue />
+  <!-- Footer -->
+  <AppFooterVue />
 </template>
 
 <!-- CSS -->
