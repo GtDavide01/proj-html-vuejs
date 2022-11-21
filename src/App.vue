@@ -7,6 +7,7 @@ import IntroducingVideoVue from "./components/IntroducingVideo.vue";
 import ResultNumberVue from "./components/ResultNumber.vue";
 import AppServicesVue from "./components/AppServices.vue";
 import AppTeamVue from "./components/AppTeam.vue";
+import AppNewsVue from "./components/AppNews.vue";
 export default {
   components: {
     AppHeaderVue,
@@ -15,6 +16,7 @@ export default {
     ResultNumberVue,
     AppServicesVue,
     AppTeamVue,
+    AppNewsVue,
   },
 };
 </script>
@@ -33,6 +35,8 @@ export default {
   <AppServicesVue />
   <!-- section team -->
   <AppTeamVue />
+  <!-- section news -->
+  <AppNewsVue />
 </template>
 
 <!-- CSS -->
