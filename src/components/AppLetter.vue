@@ -66,7 +66,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-    margin-left: 20px;
+    padding-left: 40px;
     input {
       width: 70%;
       margin: 5px 0;

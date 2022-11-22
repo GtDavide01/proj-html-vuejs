@@ -66,7 +66,7 @@ export default {
     margin-bottom: 100px;
     .opaco {
       height: 100%;
-      background-color: rgba(5, 130, 131, 0.3);
+      background-color: rgba(5, 130, 131, 0.2);
       position: relative;
     }
 

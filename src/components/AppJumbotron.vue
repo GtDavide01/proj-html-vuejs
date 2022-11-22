@@ -95,7 +95,7 @@ header {
   }
 }
 .centercontent {
-  width: 35%;
+  width: 30%;
   text-align: center;
   position: absolute;
   top: 50%;
